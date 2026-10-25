@@ -1,6 +1,10 @@
 # Android TV setup (experimental)
 
-## Build
+## Download (normal installation)
+
+Get the `.apk` and SHA256SUMS.txt from the [latest GitHub Release](https://github.com/FeranmiOladokun/Cleanframe---android---tv-/releases/latest). No SDK or source compilation is needed for that APK; ADB/network authorization is still needed for the guided computer-based install below. Keep release-signed updates on the same signing identity. A self-built APK uses a different key and may not update an existing release installation.
+
+## Build from source (optional)
 
 Install Java 17, Python 3.10+, and Android SDK platform 34 and build-tools 34.0.0. Set ANDROID_HOME (or ANDROID_SDK_ROOT) to your SDK directory. Ensure Java tools are on PATH. Run `sh android/build.sh` from the repository root. Build output and signing material stay ignored. A fresh checkout generates a unique local signing key; retain android/shortcut-key.jks and .local/android-signing-password for compatible updates. Never publish them. The shared package identity is local.cleanframe.test; do not install over an unrelated app using that identity.
 
@@ -10,7 +14,7 @@ Use the TV’s own Developer options to enable network/ADB debugging if supporte
 
 ```sh
 adb connect TV_ADDRESS:PORT
-adb -s TV_ADDRESS:PORT install -r android/out/cleanframe-test.apk
+adb -s TV_ADDRESS:PORT install -r PATH_TO_DOWNLOADED_OR_BUILT_APK
 adb -s TV_ADDRESS:PORT shell am start -n local.cleanframe.test/.MainActivity
 ```
 

@@ -29,15 +29,24 @@ Switch between Google TV and CleanFrame using your remote—no laptop needed to 
 
 Tested personally on a Xiaomi Android 11 TV. Other models, Android versions and remote buttons are unverified. This is a normal launcher app with no default-Home assignment: keep the original TV Home available for recovery.
 
-## Build and install
+## Download and install
 
-See [Android setup](android/README.md). Requires Java 17, Python 3.10+, Android SDK platform 34/build-tools 34.0.0, and ADB. Build from this clean source with your own generated signing key; keep the key for future updates.
+**[Download the Android TV APK](https://github.com/FeranmiOladokun/Cleanframe---android---tv-/releases/latest)** — choose the `.apk` attachment. The release also includes SHA-256 checksums.
+
+Give your assistant the [setup prompt](SETUP-PROMPT.md). It can download the release and install it through ADB, then guide cleanup choices, Spotify access and remote mapping. You do not need to compile the app for a normal install. Setup still requires your TV’s connection/authorization steps.
+
+The APK includes the adjustable glass dock, Quick controls, floating Spotify banner and all placement options, fixed-city weather, local-video wallpaper support, and foreground screen-awake behavior. Personal video footage is not bundled; add your own licensed files. Optional cleanup and remote mapping are guided setup actions, not automatic APK behavior.
+
+For a manual install after connecting your TV:
 
 ```sh
-sh android/build.sh
+adb -s TV_ADDRESS:PORT install -r CleanFrame-Android-TV-v0.1.0.apk
+adb -s TV_ADDRESS:PORT shell am start -n local.cleanframe.test/.MainActivity
 ```
 
-Output: `android/out/cleanframe-test.apk`. No prebuilt APK is published in this source upload.
+Replace TV_ADDRESS:PORT with your TV’s actual debugging address. If an existing app with this package has a different signing certificate, stop and follow the recovery/setup guide rather than uninstalling it to force an update. Keep the original Home launcher available.
+
+For source builds, see [Android setup](android/README.md). Requires Java 17, Python 3.10+, Android SDK platform 34/build-tools 34.0.0, and ADB. Source builds use your own local signing key and cannot necessarily update a release-signed installation.
 
 ## Guided setup with your AI assistant
 
