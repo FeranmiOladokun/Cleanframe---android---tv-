@@ -10,10 +10,6 @@ Switch between Google TV and CleanFrame using your remote—no laptop needed to 
 
 1920 × 1080 captures from the TV web preview, with sample Spotify/weather data.
 
-### Home
-
-![CleanFrame home with floating Spotify details and glass dock](docs/screenshots/home.jpg)
-
 ### Quick controls
 
 ![Top-center Quick controls with Spotify playback and volume](docs/screenshots/quick-controls.jpg)
