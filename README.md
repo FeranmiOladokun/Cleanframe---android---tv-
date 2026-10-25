@@ -2,6 +2,12 @@
 
 An experimental, distraction-free Android TV launcher, adapted from **[Nathan Clark’s CleanFrame](https://github.com/nthnclrk/CleanFrame)**. Original code is MIT licensed; see [upstream attribution](UPSTREAM.md), [LICENSE](LICENSE) and [asset notices](THIRD_PARTY_NOTICES.md).
 
+## Open your TV home screen without your laptop
+
+The goal is simple: **set it up once, then use your TV remote to return to CleanFrame—even after opening another app.** Your laptop is used for installation and setup; a successfully configured remote shortcut launches the UI directly on the TV without a computer or an ongoing ADB connection.
+
+The [guided setup prompt](SETUP-PROMPT.md) makes mapping and physically testing a remote button part of setup, including after a reboot and with the computer disconnected. Button support depends on your TV and remote, so the agent must verify the shortcut before calling setup complete. CleanFrame also stays accessible from the TV’s normal Apps list using the remote.
+
 ## What this fork adds
 
 - A floating, adjustable dock with an optional Liquid Glass-style surface.
