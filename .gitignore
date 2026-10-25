@@ -27,3 +27,10 @@ PP*.woff2
 /explorations/
 /docs/research/
 /docs/articles/
+
+/android/out/
+/android/*.jks
+/android/*.keystore
+*.apk
+/recordings/
+/inventory/

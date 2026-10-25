@@ -1,0 +1,31 @@
+.dock-editor{position:absolute;inset:0;z-index:125;color:#f6f4ef;font-family:Manrope,Arial,sans-serif;pointer-events:none}
+.dock-editor-card{position:absolute;left:310px;top:54px;width:1300px;padding:28px 40px 24px;border-radius:30px;background:linear-gradient(135deg,rgba(52,66,73,.98),rgba(25,34,40,.97));border:1px solid rgba(255,255,255,.25);box-shadow:0 24px 80px rgba(0,0,0,.2);pointer-events:auto}
+.dock-editor-eyebrow{font-size:17px;letter-spacing:3px;text-transform:uppercase;opacity:.58;margin-bottom:6px}
+.dock-editor h2{font-size:34px;font-weight:500;margin-bottom:18px}
+.dock-editor-controls{display:flex;gap:18px}
+.dock-editor-row{flex:1;padding:14px 16px 10px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.03)}
+.dock-editor-row.is-focus{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.68)}
+.dock-editor-label{display:block;font-size:21px;opacity:.72;margin-bottom:7px}
+.dock-stepper{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.dock-stepper button{font-size:38px;width:38px;text-align:center;line-height:42px;color:inherit;border-radius:12px}
+.dock-stepper [data-dock-value]{font-size:24px;text-align:center;white-space:nowrap}
+.dock-editor-footer{display:flex;justify-content:flex-end;gap:16px;margin-top:18px}
+.dock-editor-footer button{font-size:23px;padding:10px 22px;border-radius:14px;border:1px solid rgba(255,255,255,.15)}
+.dock-editor-footer .is-focus{background:rgba(255,255,255,.25);border-color:rgba(255,255,255,.7)}
+.dock-editor-status{font-size:18px;opacity:.65;margin-top:16px;min-height:24px}
+.dock-edit #appearance,.dock-edit #sheet,.dock-edit .caption,.dock-edit .utils,.dock-edit .ut-lens,.dock-edit .util-focus-label{visibility:hidden!important}
+.dock-edit #scene{transform:none!important;border-radius:0!important;pointer-events:none}
+.dock-edit .home,.dock-edit #bg{visibility:visible!important}
+.detail-layout .setting-section+.setting-section{margin-top:26px}
+.detail-layout .setting-label{font-size:24px;line-height:32px;margin-bottom:10px}
+.detail-layout .setting-choice{font-size:32px;min-height:76px}
+.dock-reflection{position:absolute;max-width:none;object-fit:cover;opacity:0;pointer-events:none}
+.dock-liquid #dock .mat{background:linear-gradient(160deg,rgba(247,252,255,.12),rgba(225,240,252,.035) 48%,rgba(210,228,244,.09))!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.76),inset 1px 0 0 rgba(255,255,255,.26),inset -1px 0 0 rgba(255,255,255,.16),inset 0 -1.5px 0 rgba(255,255,255,.28),0 14px 44px rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.22)}
+.dock-liquid #dock .mat::after{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(ellipse at 8% 0,rgba(255,255,255,.28),transparent 52%),linear-gradient(165deg,rgba(255,255,255,.09),transparent 40%,rgba(255,255,255,.025) 80%,rgba(255,255,255,.12));pointer-events:none}
+.dock-liquid #dock .dock-reflection{opacity:.22}
+.dock-liquid:not(.live-active) #dock .mat-img{opacity:.23!important}
+.dock-liquid #dock .mat-veil{background:rgba(7,15,22,.12)!important}
+.dock-liquid #dock .mat-scrim{opacity:.22}
+.dock-liquid #dock .plate.on-focus{background:linear-gradient(150deg,rgba(255,255,255,.30),rgba(255,255,255,.08) 55%,rgba(255,255,255,.17));box-shadow:inset 0 1px 0 rgba(255,255,255,.65),inset 0 -1px 0 rgba(255,255,255,.16)}
+.dock-liquid .bg-dark #dock .mat,.dock-liquid .bg-light #dock .mat{display:block}
+.dock-liquid .bg-dark #dock .mat-img,.dock-liquid .bg-light #dock .mat-img,.dock-liquid .bg-dark #dock .dock-reflection,.dock-liquid .bg-light #dock .dock-reflection{opacity:0!important}

@@ -1,0 +1,1 @@
+These public fallback reflection fields reuse the MIT project’s bundled Misty wallpaper material. Original wallpaper credits and terms are in app/assets/PHOTO-CREDIT.md and THIRD_PARTY_NOTICES.md. Personal stock-video frames and video files are not distributed here.

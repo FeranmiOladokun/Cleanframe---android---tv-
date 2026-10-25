@@ -1,0 +1,32 @@
+.live-active,.live-active body,.live-active .stage{background:transparent!important}
+.live-active #photo{visibility:hidden}
+.live-active .stage{--ink:#f4f4f1;--clock-ink:#f4f4f1;--dock-clock-ink:#f4f4f1;color:#f4f4f1}
+.live-active .caption,.live-active .utils,.live-active .app-focus-name,.live-active .tile,.live-active .ph-row{color:#f4f4f1!important}
+.live-active .mat-img,.live-active .ph-field-img,.live-active .quick-material{opacity:0!important}
+.live-active .mat{background:linear-gradient(165deg,rgba(220,230,230,.28),rgba(175,190,195,.16))}
+.live-active .ph-field{background:rgba(220,230,230,.22)}
+#liveEffects{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none}
+.live-overlay{position:absolute;inset:0;z-index:120;color:#f5f4ee;font-family:Manrope,Arial,sans-serif;background:linear-gradient(90deg,rgba(5,12,16,.88),rgba(5,12,16,.15) 65%)}
+.live-card{position:absolute;left:76px;top:62px;width:770px;padding:30px 34px;border:1px solid rgba(255,255,255,.16);border-radius:28px;background:linear-gradient(140deg,rgba(160,181,183,.22),rgba(25,37,43,.78));box-shadow:0 20px 70px rgba(0,0,0,.2)}
+.live-eyebrow{font-size:18px;text-transform:uppercase;letter-spacing:3px;opacity:.55;margin-bottom:10px}
+.live-card h2{font-size:42px;font-weight:500;margin-bottom:10px}
+.live-intro{font-size:21px;opacity:.65;margin-bottom:25px}
+.live-choice{display:block;position:relative;width:100%;padding:16px 48px 16px 20px;border-radius:16px;border:1px solid transparent;margin-bottom:4px;color:inherit}
+.live-choice.is-focus{background:rgba(235,245,245,.19);border-color:rgba(255,255,255,.5)}
+.live-name{display:block;font-size:26px}
+.live-detail{display:block;font-size:17px;opacity:.63;margin-top:7px;line-height:1.25}
+.live-tick{position:absolute;right:18px;top:20px;font-size:23px}
+.live-status{font-size:18px;opacity:.68;margin-top:17px;line-height:1.35;min-height:25px}
+.live-picker #sheet{visibility:hidden}
+.live-picker .home{visibility:visible}
+.live-picker .stage{background:transparent}
+.live-picker:not(.live-active) .bg{visibility:visible}
+.at-settings .settings-group{height:96px}
+.at-settings .settings-group-name{font-size:36px;line-height:42px}
+.at-settings .settings-group-value{font-size:23px;line-height:29px}
+.live-choice{padding-top:12px;padding-bottom:12px}
+.live-name{font-size:24px;line-height:29px}
+.live-detail{font-size:16px;line-height:20px;margin-top:4px}
+/* Keep the picker readable; the uncovered right side previews the wallpaper. */
+.live-picker .home{visibility:hidden}
+.live-active .scene{background:transparent!important}

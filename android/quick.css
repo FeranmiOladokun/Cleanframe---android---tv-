@@ -1,0 +1,49 @@
+.quick-overlay{position:absolute;inset:0;z-index:100;color:#f6f5f2;font-family:Manrope,Arial,sans-serif}
+.quick-shade{position:absolute;inset:0;background:rgba(3,8,12,.12);animation:quick-shade-in 280ms ease-out both}
+.quick-card{position:absolute;left:400px;top:24px;width:1120px;border-radius:52px;overflow:hidden;background:rgba(15,23,29,.58);box-shadow:0 22px 76px rgba(0,0,0,.32),inset 0 1.5px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(255,255,255,.19),inset 0 0 0 1px rgba(255,255,255,.12);transform-origin:50% 0;animation:quick-island-in 380ms cubic-bezier(.18,.8,.22,1) both}
+.quick-material{position:absolute;width:1920px;height:1080px;max-width:none;left:-400px;top:-24px;opacity:.12;pointer-events:none}
+.quick-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,9,14,.22),rgba(24,35,43,.16) 56%,rgba(118,137,150,.12))}
+.quick-content{position:relative;padding:24px 30px 22px}
+.quick-handle{width:88px;height:5px;border-radius:5px;margin:0 auto 19px;background:rgba(255,255,255,.34)}
+.quick-header{display:flex;align-items:center;justify-content:space-between;margin:0 8px 20px}
+.quick-title{font-size:34px;line-height:42px;font-weight:500;margin:0}
+.quick-eyebrow{font-size:17px;letter-spacing:2.5px;text-transform:uppercase;opacity:.46}
+.quick-cards{display:flex;gap:16px;margin-bottom:16px}
+.quick-section{border:1px solid rgba(255,255,255,.1);border-radius:30px;background:linear-gradient(150deg,rgba(255,255,255,.065),rgba(255,255,255,.025));padding:20px}
+.quick-music{width:636px;height:232px;display:flex;flex-direction:column}
+.quick-audio{flex:1;min-width:0;height:232px;display:flex;flex-direction:column}
+.quick-track{display:flex;align-items:center;gap:20px;min-height:104px;margin-bottom:20px}
+.quick-track-copy{min-width:0;flex:1}
+.quick-art{width:104px;height:104px;object-fit:cover;border-radius:24px;background:rgba(255,255,255,.09);flex:none}
+.quick-art-placeholder{display:flex;align-items:center;justify-content:center;font-size:44px}
+.quick-song{font-size:27px;font-weight:600;line-height:1.25;margin-bottom:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.quick-artist{font-size:21px;opacity:.66;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.quick-status{font-size:17px;opacity:.52;margin-top:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.quick-row{display:flex;gap:10px;margin-bottom:12px}
+.quick-section>.quick-row:last-child{margin-bottom:0}
+.quick-music>.quick-row,.quick-audio>.quick-row{margin-top:auto}
+.quick-button{flex:1;min-width:0;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:rgba(255,255,255,.055);padding:15px 10px;text-align:center;color:inherit;font-size:21px;outline:none;line-height:26px;white-space:nowrap;transition:background-color 120ms linear,border-color 120ms linear}
+.quick-button.is-focus{background:rgba(240,246,252,.22);border-color:rgba(255,255,255,.76);box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}
+.quick-button.is-unavailable{color:rgba(246,241,231,.38)}
+.quick-button svg{width:26px;height:26px;vertical-align:middle;fill:currentColor}
+.quick-audio .quick-button{font-size:18px;padding-left:5px;padding-right:5px}
+.quick-volume{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:24px;margin:8px 0 24px}
+#quickVolume{font-size:21px;opacity:.58;white-space:nowrap}
+.quick-bar{height:7px;background:rgba(255,255,255,.13);border-radius:10px;overflow:hidden;margin-bottom:20px}
+.quick-bar-fill{height:100%;width:0;background:#b9cbdc;border-radius:inherit}
+.quick-shortcuts-title{font-size:19px;font-weight:500;opacity:.58;margin:0 6px 15px}
+.quick-shortcuts{padding:18px 20px 20px}
+.quick-footer{font-size:17px;opacity:.46;margin-top:17px;text-align:center;line-height:24px}
+.live-active .quick-card{background:rgba(15,23,29,.58)}
+.live-active .quick-card .quick-material{opacity:.12!important}
+.quick-overlay.is-closing .quick-card{animation:quick-island-out 160ms ease-in both}
+.quick-overlay.is-closing .quick-shade{animation:quick-shade-out 160ms ease-in both}
+@keyframes quick-island-in{0%{opacity:0;transform:translate3d(0,-30px,0) scale(.22,.08);border-radius:90px}55%{opacity:1}100%{opacity:1;transform:translate3d(0,0,0) scale(1,1);border-radius:52px}}
+@keyframes quick-island-out{from{opacity:1;transform:translate3d(0,0,0) scale(1,1)}to{opacity:0;transform:translate3d(0,-20px,0) scale(.3,.08)}}
+@keyframes quick-shade-in{from{opacity:0}to{opacity:1}}
+@keyframes quick-shade-out{from{opacity:1}to{opacity:0}}
+@media(prefers-reduced-motion:reduce){.quick-card,.quick-shade,.quick-overlay.is-closing .quick-card,.quick-overlay.is-closing .quick-shade{animation:none}.quick-button{transition:none}}
+
+.quick-title,.quick-song,.quick-artist,.quick-volume,.quick-shortcuts-title,.quick-button{text-shadow:0 1px 2px rgba(0,0,0,.38)}
+
+.quick-open .utils,.quick-open .util-focus-label{visibility:hidden}

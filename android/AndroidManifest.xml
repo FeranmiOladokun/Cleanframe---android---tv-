@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.cleanframe.test" android:versionCode="1" android:versionName="0.1-test">
+<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="30"/>
+<uses-feature android:name="android.software.leanback" android:required="false"/>
+<uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<queries><intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent><intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent><package android:name="com.google.android.apps.tv.launcherx"/></queries>
+<application android:label="CleanFrame Test" android:allowBackup="false" android:hardwareAccelerated="true" android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen">
+<activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize">
+<intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent-filter>
+</activity>
+<service android:name=".MainActivity$MediaAccess" android:label="CleanFrame Spotify controls" android:exported="true" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"><intent-filter><action android:name="android.service.notification.NotificationListenerService"/></intent-filter></service>
+</application></manifest>

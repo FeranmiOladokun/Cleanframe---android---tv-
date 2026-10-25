@@ -1,0 +1,21 @@
+.clean-weather{margin-top:18px;font-family:Manrope,Arial,sans-serif;color:inherit;text-shadow:inherit;max-width:650px}
+.weather-cities{display:flex;gap:40px}
+.weather-city{display:flex;flex-direction:column;gap:8px}
+.weather-name{font-size:19px;font-weight:500;letter-spacing:.2px;opacity:.65}
+.weather-reading{display:flex;align-items:center;gap:10px;font-size:27px;font-weight:500;line-height:1.2;white-space:nowrap}
+.weather-reading svg{width:25px;height:25px;opacity:.85;flex:none}
+.weather-condition{font-size:19px;opacity:.7;font-weight:400}
+.weather-credit{font-size:12px;letter-spacing:.2px;opacity:.35;margin-top:12px}
+.weather-pending{font-size:20px;opacity:.6}.weather-pending span{display:block;font-size:17px;margin-top:7px;opacity:.65}
+.l-list .weather-cities{justify-content:flex-end}.l-list .weather-city{align-items:flex-end}
+.at-appearance .clean-weather,.at-wallpaper .clean-weather{display:none}
+
+/* Two compact city rows, each with a second line for today's range. */
+.weather-cities{flex-direction:column;gap:20px}
+.weather-city{gap:7px}
+.weather-main{display:flex;align-items:center;gap:18px}
+.weather-name{font-size:22px;min-width:88px;opacity:.8}
+.weather-reading{font-size:27px}
+.weather-range{font-size:18px;opacity:.62;display:flex;align-items:center;gap:9px;padding-left:106px}
+.weather-range>span:first-child{margin-left:6px}.weather-range-dash{opacity:.65}
+.l-list .weather-main{justify-content:flex-end}.l-list .weather-range{padding-left:0}
