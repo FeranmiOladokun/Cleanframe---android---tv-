@@ -23,11 +23,15 @@ sh android/build.sh
 
 Output: `android/out/cleanframe-test.apk`. No prebuilt APK is published in this source upload.
 
-## Important boundaries
+## Guided setup with your AI assistant
 
-This repository does **not** automatically debloat a TV, disable system apps, remove ads inside third-party apps, install streaming services, remap remote buttons or replace native Home. The clean launcher avoids recommendation feeds; that is separate from system cleanup. A guided cross-brand cleanup/remote installer is future work, not an implemented feature. Never copy another TV’s disable list.
+**[Copy the setup prompt](SETUP-PROMPT.md)** into an assistant with local terminal/ADB access. It walks you through Wi-Fi connection, TV-specific app inventory, optional approved cleanup, app installation, Spotify access, personalization, and a remote-button shortcut. It asks before changes and keeps a private undo log.
 
-Spotify metadata requires explicitly enabling CleanFrame notification access in Android settings. The bridge selects Spotify media sessions and does not parse/store notification bodies. Weather requests fixed city coordinates from Open-Meteo; no location permission. Wallpapers run locally. Keep Spotify and any other apps installed through their legitimate distribution channels.
+**A physically tested remote shortcut is a required setup goal**, including a test after reboot and with the computer disconnected. The agent must try a supported spare key or supported alternate gesture if the first key is reserved. Some TV/remote firmware blocks remapping: the agent must report that limitation and leave the dedicated-button task incomplete rather than promise universal support. CleanFrame also remains accessible using the TV’s normal Apps list without a PC.
+
+The prompt guides an assistant; the APK does not itself debloat the TV or configure a mapper. Cleanup is optional, uses that TV’s inventory, and preserves essential packages and original Home. The clean launcher avoids recommendation feeds; it cannot remove advertisements inside third-party streaming services. No app subscriptions, sign-ins or private wallpaper footage are included.
+
+Spotify metadata requires your explicit Android notification-access grant. The bridge selects Spotify media sessions rather than parsing/storing notification bodies. Weather currently requests fixed Łódź/Warsaw coordinates from Open-Meteo without location permission; the prompt can guide a source customization for your cities. Wallpapers run locally.
 
 ## Development
 

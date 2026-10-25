@@ -22,9 +22,9 @@ Enable CleanFrame Spotify controls under Android’s Notification access setting
 
 Weather currently uses fixed Łódź/Warsaw coordinates. A city picker is not implemented. Native videos use app-owned files under Android/data/local.cleanframe.test/files/live/ with names fire.mp4, snow.mp4, waves.mp4 and amber.mp4. Supply appropriately licensed footage compatible with your decoder; no clips are distributed in this repository. Public reflection files are static fallback material, not personal stock-video frames.
 
-## Optional remote shortcut
+## Remote shortcut in guided setup
 
-Choose a button-mapping app compatible with your remote/TV, review its permissions, and map a spare button to launch CleanFrame. Reserved manufacturer buttons may not be remappable. This repo does not install/configure a mapper. Preserve the ordinary Home button until you have tested recovery. No accessibility permission is required by CleanFrame itself.
+Choose a button-mapping app compatible with your remote/TV, review its permissions, and map a spare button to launch CleanFrame. Reserved manufacturer buttons may not be remappable. The [guided setup prompt](../SETUP-PROMPT.md) instructs your assistant to ask permission, configure and physically test the mapping, including after reboot and without a computer. The APK does not configure a mapper itself; reserved keys may require a different supported button or gesture. The agent must report unsupported mapping rather than claim success. Preserve the ordinary Home button until you have tested recovery. No accessibility permission is required by CleanFrame itself.
 
 ## Recovery
 
